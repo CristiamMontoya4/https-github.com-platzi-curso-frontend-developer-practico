@@ -3,7 +3,7 @@ const desktopMenu = document.querySelector('.desktop-menu');
 const iconBurger = document.querySelector('.menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 const iconCart = document.querySelector('.navbar-shopping-cart');
-const orderMenu = document.querySelector('.product-detail ');
+const orderMenu = document.querySelector('.order-detail ');
 
 const cardsContainer = document.createElement('div');
 cardsContainer.classList.add('cards-container');
@@ -130,4 +130,25 @@ renderProducts(productList);
 
 // for (product in productList) {  //puede traer el indice
 //     console.log(product.name);
+// }
+
+
+
+// otra forma de recorrer el Array
+// for(product of products){
+//     const htmlCards = `<div class="product-card">
+//         <img src=${product.image} alt="">
+//         <div class="product-info">
+//           <div>
+//             <p>$${product.price}</p>
+//             <p>${product.name}</p>
+//           </div>
+//           <figure>
+//             <img src="./icons/bt_add_to_cart.svg" alt="">
+//           </figure>
+//         </div>
+//       </div>`
+
+//     const cardsContainer = document.querySelector('.cards-container');
+//     cardsContainer.innerHTML += htmlCards;
 // }
